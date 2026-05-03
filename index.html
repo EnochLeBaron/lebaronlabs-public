@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeBaronLabs | Navigation Hub</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="site-header">
+        <a href="/" class="logo">
+            <span class="logo-mark">LL</span>
+            <span>LeBaronLabs</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="/html/development.html">Development</a>
+            <a href="/html//design.html">Digital Design</a>
+            <a href="/html/hosting.html">Hosting</a>
+            <a href="/html/projects.html">Projects</a>
+            <a href="/html/contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="notice-banner">
+        <p>
+            <strong>Example site only</strong> — LeBaronLabs is not currently accepting most public projects.
+            You may submit a request, but approval is limited and not guaranteed.
+        </p>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="/html/development.html">Development</a>
+        <a href="/html//design.html">Digital Design</a>
+        <a href="/html/hosting.html">Hosting</a>
+        <a href="/html/projects.html">Projects</a>
+        <a href="/html/contact.html">Contact</a>
+        <a href="https://status.lebaronlabs.com/status/lebaronlabs">System Status</a>
+    </nav>
+
+    <main class="main-wrapper">
+
+        <section class="hero-section">
+            <div class="hero-badge">Software • Design • Hosting</div>
+
+            <h1>LeBaronLabs</h1>
+
+            <p>
+                A clean digital hub for software development, digital design,
+                hosting tools, and project navigation.
+            </p>
+        </section>
+
+        <section class="nav-grid" aria-label="Main navigation">
+
+            <a href="/html/development.html" class="nav-card">
+                <div class="card-icon">⌘</div>
+                <div>
+                    <h2>Software Development</h2>
+                    <p>Websites, backend systems, automation, and custom tools.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+            <a href="/html/design.html" class="nav-card">
+                <div class="card-icon">✦</div>
+                <div>
+                    <h2>Digital Design</h2>
+                    <p>Modern layouts, brand visuals, UI polish, and web graphics.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+            <a href="/html/hosting.html" class="nav-card">
+                <div class="card-icon">☁</div>
+                <div>
+                    <h2>Hosting</h2>
+                    <p>Project hosting, uptime monitoring, tunnels, and deployment.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+            <a href="/html/projects.html" class="nav-card">
+                <div class="card-icon">▣</div>
+                <div>
+                    <h2>Projects</h2>
+                    <p>View current builds, experiments, websites, and software work.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+            <a href="/html/contact.html" class="nav-card">
+                <div class="card-icon">✉</div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>Start a project, request updates, or send business details.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+            <a href="https://status.lebaronlabs.com/status/lebaronlabs" class="nav-card status-card">
+                <div class="card-icon">●</div>
+                <div>
+                    <h2>System Status</h2>
+                    <p>Check uptime, current availability, and service status.</p>
+                </div>
+                <span class="card-arrow">→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> LeBaronLabs. Built for modern digital projects.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

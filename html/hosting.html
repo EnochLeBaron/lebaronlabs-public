@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting | LeBaronLabs</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/hosting.css" />
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="site-header">
+        <a href="/" class="logo">
+            <span class="logo-mark">LL</span>
+            <span>LeBaronLabs</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="/html/development.html">Development</a>
+            <a href="/html/design.html">Digital Design</a>
+            <a href="/html/hosting.html">Hosting</a>
+            <a href="/html/projects.html">Projects</a>
+            <a href="/html/contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+        <div class="notice-banner">
+            <p>
+                <strong>Example site only</strong> — LeBaronLabs is not currently accepting most public projects.
+                You may submit a request, but approval is limited and not guaranteed.
+            </p>
+        </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="/html/development.html">Development</a>
+        <a href="/html/design.html">Digital Design</a>
+        <a href="/html/hosting.html">Hosting</a>
+        <a href="/html/projects.html">Projects</a>
+        <a href="/html/contact.html">Contact</a>
+        <a href="https://status.lebaronlabs.com/status/lebaronlabs">System Status</a>
+    </nav>
+
+    <main class="hosting-page">
+
+        <section class="hosting-hero">
+            <div class="hosting-hero-content">
+                <span class="hosting-kicker">Hosting & Deployment</span>
+
+                <h1>Web projects hosted, monitored, and kept online.</h1>
+
+                <p>
+                    LeBaronLabs helps set up lightweight hosting environments for websites,
+                    tools, dashboards, and web apps using clean server structure, process
+                    management, domains, tunnels, and uptime monitoring.
+                </p>
+
+                <div class="hosting-actions">
+                    <a href="/html/contact.html" class="hosting-btn hosting-btn-primary">Request Hosting Setup</a>
+                    <a href="https://status.lebaronlabs.com/status/lebaronlabs" class="hosting-btn hosting-btn-secondary">View Status</a>
+                </div>
+            </div>
+
+            <div class="server-preview">
+                <div class="server-card">
+                    <div class="server-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="server-lines">
+                        <div>
+                            <strong>server</strong>
+                            <span class="status-online">online</span>
+                        </div>
+                        <div>
+                            <strong>cloudflared</strong>
+                            <span class="status-online">online</span>
+                        </div>
+                        <div>
+                            <strong>uptime-kuma</strong>
+                            <span class="status-online">online</span>
+                        </div>
+                    </div>
+
+                    <div class="server-footer">
+                        <span class="pulse-dot"></span>
+                        Monitoring active
+                    </div>
+                </div>
+
+                <div class="hosting-label label-cloud">Cloudflare Tunnel</div>
+                <div class="hosting-label label-pm2">PM2 Managed</div>
+                <div class="hosting-label label-monitor">Uptime Alerts</div>
+            </div>
+        </section>
+
+        <section class="hosting-services">
+            <div class="hosting-section-heading">
+                <span class="hosting-kicker">Hosting services</span>
+                <h2>Everything needed to get a site live.</h2>
+                <p>
+                    A clean hosting setup is more than just uploading files. It needs routing,
+                    startup recovery, monitoring, and a structure that can be maintained.
+                </p>
+            </div>
+
+            <div class="hosting-grid">
+
+                <article class="hosting-card">
+                    <div class="hosting-icon">01</div>
+                    <h3>Website Hosting</h3>
+                    <p>
+                        Host static sites, landing pages, business websites, and simple Node-based
+                        projects with clean routing and public domain access.
+                    </p>
+                </article>
+
+                <article class="hosting-card featured-hosting-card">
+                    <div class="hosting-icon">02</div>
+                    <h3>Cloudflare Tunnels</h3>
+                    <p>
+                        Secure public access without router port forwarding, using Cloudflare Tunnel
+                        to route domains to local services.
+                    </p>
+                </article>
+
+                <article class="hosting-card">
+                    <div class="hosting-icon">03</div>
+                    <h3>PM2 Process Control</h3>
+                    <p>
+                        Keep web services running, auto-restart crashed processes, and restore
+                        everything after reboot.
+                    </p>
+                </article>
+
+                <article class="hosting-card">
+                    <div class="hosting-icon">04</div>
+                    <h3>Uptime Monitoring</h3>
+                    <p>
+                        Monitor websites internally and externally with status pages, alerts,
+                        and service visibility.
+                    </p>
+                </article>
+
+                <article class="hosting-card">
+                    <div class="hosting-icon">05</div>
+                    <h3>Domain Routing</h3>
+                    <p>
+                        Connect domains and subdomains to the right services, such as websites,
+                        dashboards, and status pages.
+                    </p>
+                </article>
+
+                <article class="hosting-card">
+                    <div class="hosting-icon">06</div>
+                    <h3>Server Maintenance</h3>
+                    <p>
+                        Organize files, update packages carefully, review logs, and keep the hosting
+                        setup easier to manage.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="hosting-stack-section">
+            <div class="stack-panel">
+                <span class="hosting-kicker">Hosting stack</span>
+                <h2>A lightweight setup for real web projects.</h2>
+                <p>
+                    This type of setup works well for small business websites, personal tools,
+                    dashboards, internal systems, and early-stage projects that do not need a large
+                    cloud platform yet.
+                </p>
+
+                <div class="stack-tags">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>PM2</span>
+                    <span>Cloudflare</span>
+                    <span>Uptime Kuma</span>
+                    <span>HetrixTools</span>
+                </div>
+            </div>
+
+            <div class="reliability-panel">
+                <span class="hosting-kicker">Reliability focus</span>
+                <h2>Built to recover.</h2>
+
+                <div class="reliability-list">
+                    <div>
+                        <span>✓</span>
+                        <p>Auto-start after reboot</p>
+                    </div>
+                    <div>
+                        <span>✓</span>
+                        <p>Process restart on crash</p>
+                    </div>
+                    <div>
+                        <span>✓</span>
+                        <p>External uptime alerts</p>
+                    </div>
+                    <div>
+                        <span>✓</span>
+                        <p>Status dashboard visibility</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hosting-process-section">
+            <div class="hosting-section-heading">
+                <span class="hosting-kicker">Process</span>
+                <h2>From local files to a live domain.</h2>
+            </div>
+
+            <div class="hosting-process-grid">
+                <div class="hosting-process-item">
+                    <span>01</span>
+                    <h3>Prepare</h3>
+                    <p>Set up the project folder, server files, dependencies, and clean structure.</p>
+                </div>
+
+                <div class="hosting-process-item">
+                    <span>02</span>
+                    <h3>Connect</h3>
+                    <p>Connect the domain, tunnel, DNS records, and routing for the site.</p>
+                </div>
+
+                <div class="hosting-process-item">
+                    <span>03</span>
+                    <h3>Monitor</h3>
+                    <p>Add uptime checks, process management, alerts, and recovery behavior.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hosting-note">
+            <span class="hosting-kicker">Important note</span>
+            <h2>Hosting setup depends on the project.</h2>
+            <p>
+                Some projects are best hosted locally, some are better on a VPS, and some should
+                use cloud hosting. The right setup depends on traffic, uptime needs, security,
+                storage, and how critical the project is.
+            </p>
+        </section>
+
+        <section class="hosting-cta">
+            <div>
+                <span class="hosting-kicker">Ready to host?</span>
+                <h2>Need help getting a site or web tool online?</h2>
+                <p>
+                    Send the project details, domain, and goals, and LeBaronLabs can help
+                    create a clean hosting plan.
+                </p>
+            </div>
+
+            <a href="/html/contact.html" class="hosting-btn hosting-btn-primary">Contact LeBaronLabs</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> LeBaronLabs. Built for modern digital projects.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
