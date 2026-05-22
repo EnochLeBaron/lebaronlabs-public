@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/app-home", (req, res) => {
+    res.sendFile(path.join(__dirname, "app-home.html"));
+});
+
 app.get("/privacy", (req, res) => {
     res.sendFile(path.join(__dirname, "privacy.html"));
 });
