@@ -16,6 +16,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/privacy", (req, res) => {
+    res.sendFile(path.join(__dirname, "privacy.html"));
+});
+
+app.get("/terms", (req, res) => {
+    res.sendFile(path.join(__dirname, "terms.html"));
+});
+
 const contactLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 5,

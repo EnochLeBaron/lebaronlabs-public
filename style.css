@@ -270,6 +270,25 @@ a {
     z-index: 2;
 }
 
+.policy-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.policy-card {
+    min-height: 0;
+    gap: 18px;
+}
+
+.policy-card a,
+.site-footer a {
+    color: var(--cyan);
+    font-weight: 800;
+}
+
+.site-footer a {
+    margin-left: 12px;
+}
+
 .card-arrow {
     position: absolute;
     right: 22px;
@@ -336,6 +355,10 @@ a {
     }
 
     .nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .policy-grid {
         grid-template-columns: 1fr;
     }
 
