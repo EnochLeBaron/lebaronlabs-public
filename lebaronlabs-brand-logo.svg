@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">LeBaronLabs</title>
+  <desc id="desc">Stylized LB mark with a laptop in the center.</desc>
+  <defs>
+    <linearGradient id="lbBlack" x1="78" y1="54" x2="285" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#30343a"/>
+      <stop offset="0.52" stop-color="#1f242a"/>
+      <stop offset="1" stop-color="#11161c"/>
+    </linearGradient>
+    <linearGradient id="lbRed" x1="258" y1="126" x2="482" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ef1d26"/>
+      <stop offset="1" stop-color="#c9000b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#ffffff"/>
+  <g filter="url(#softShadow)">
+    <path fill="url(#lbBlack)" d="M88 137c0-13 7-25 18-32l63-38c18-11 41 2 41 23v236c0 17 14 31 31 31h73l-55 82c-7 10-18 16-30 16H123c-19 0-35-16-35-35V137Z"/>
+    <path fill="url(#lbRed)" d="M253 139h97c70 0 123 49 123 114 0 35-18 66-48 85 34 17 54 49 54 88 0 17-5 31-13 31H278c-17 0-27-19-17-33l54-76h54c22 0 40-19 40-43 0-25-18-44-42-44H253c-8 0-14-6-14-14v-94c0-8 6-14 14-14Z"/>
+    <path fill="#ffffff" d="M205 331h121c14 0 23 15 15 27l-69 103h-54l53-78h-66c-27 0-49-22-49-49v-28h49v25Z"/>
+    <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M249 258h95v57h-95z" fill="#ffffff" stroke="#20252b" stroke-width="12"/>
+      <path d="M226 324h141c0 14-11 25-25 25h-91c-14 0-25-11-25-25Z" fill="#20252b" stroke="#20252b" stroke-width="8"/>
+      <path d="M287 328h28" stroke="#ef1d26" stroke-width="9"/>
+    </g>
+  </g>
+</svg>

@@ -167,6 +167,12 @@ body {
     box-shadow: none !important;
 }
 
+.logo-mark {
+    background: #ffffff url("/lebaronlabs-brand-logo.svg") center / contain no-repeat !important;
+    color: transparent !important;
+    font-size: 0 !important;
+}
+
 .menu-btn,
 .card-arrow {
     border-color: var(--border) !important;
