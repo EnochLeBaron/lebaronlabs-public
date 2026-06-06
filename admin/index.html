@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="/lebaronlabs-brand-logo.svg">
+  <link rel="stylesheet" href="/admin/admin.css?v=lbl-admin-2026-06-03">
+  <title>LeBaronLabs Admin</title>
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="auth-view" data-auth-view hidden>
+      <form class="auth-card" data-login-form>
+        <div class="brand-row">
+          <span class="brand-mark">LL</span>
+          <div>
+            <h1>LeBaronLabs Admin</h1>
+            <p data-auth-subtitle>Sign in to manage the public site.</p>
+          </div>
+        </div>
+
+        <div class="auth-tabs">
+          <button class="is-active" type="button" data-auth-tab="login">Login</button>
+          <button type="button" data-auth-tab="register">Request Access</button>
+        </div>
+
+        <div class="auth-fields" data-login-fields>
+          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+          <button class="admin-button primary" type="submit">Login</button>
+        </div>
+
+        <div class="auth-fields" data-register-fields hidden>
+          <label>Name<input type="text" name="name" autocomplete="name"></label>
+          <label>Email<input type="email" name="registerEmail" autocomplete="email"></label>
+          <label>Password<input type="password" name="registerPassword" autocomplete="new-password" minlength="10"></label>
+          <label data-setup-field hidden>Setup Code<input type="text" name="setupCode" autocomplete="off"></label>
+          <button class="admin-button primary" type="button" data-register-submit>Submit Access</button>
+        </div>
+
+        <p class="notice" data-auth-message></p>
+      </form>
+    </section>
+
+    <section class="dashboard" data-dashboard hidden>
+      <aside class="sidebar">
+        <div class="brand-row compact">
+          <span class="brand-mark">LL</span>
+          <div>
+            <h1>Admin</h1>
+            <p data-user-line></p>
+          </div>
+        </div>
+
+        <nav class="admin-nav">
+          <button class="is-active" type="button" data-view-button="requests">Requests</button>
+          <button type="button" data-view-button="editor">Page Editor</button>
+          <button type="button" data-view-button="media">Media</button>
+          <button type="button" data-view-button="notifications">Notifications</button>
+          <button type="button" data-view-button="users">Accounts</button>
+        </nav>
+
+        <div class="sidebar-actions">
+          <a class="admin-button ghost" href="/">Public Site</a>
+          <a class="admin-button ghost" href="https://tools.lebaronlabs.com/dashboard">Dashboard</a>
+          <button class="admin-button ghost" type="button" data-logout>Logout</button>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <header class="workspace-head">
+          <div>
+            <p class="eyebrow" data-section-eyebrow>LeBaronLabs</p>
+            <h2 data-section-title>Requests</h2>
+          </div>
+          <button class="admin-button" type="button" data-refresh>Refresh</button>
+        </header>
+
+        <section class="admin-view is-active" data-view="requests">
+          <div class="metric-grid" data-summary></div>
+          <div class="request-layout">
+            <div class="request-list" data-request-list></div>
+            <article class="request-detail" data-request-detail>
+              <p class="empty-state">Choose a request.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="admin-view" data-view="editor">
+          <div class="editor-toolbar">
+            <div class="page-tabs" data-page-tabs></div>
+            <div class="editor-actions">
+              <button class="admin-button" type="button" data-reload-page>Reload</button>
+              <button class="admin-button primary" type="button" data-save-page>Save Page</button>
+            </div>
+          </div>
+          <div class="editor-shell">
+            <label class="source-editor">HTML Source<textarea data-page-source spellcheck="false"></textarea></label>
+            <div class="preview-panel">
+              <div class="preview-bar">
+                <span data-preview-label>Preview</span>
+                <a data-open-preview href="/" target="_blank" rel="noopener">Open</a>
+              </div>
+              <iframe title="Public page preview" data-preview-frame></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-view" data-view="media">
+          <form class="upload-box" data-media-form>
+            <label>Images<input type="file" name="mediaFiles" accept="image/*" multiple required></label>
+            <button class="admin-button primary" type="submit">Upload</button>
+          </form>
+          <div class="media-grid" data-media-grid></div>
+        </section>
+
+        <section class="admin-view" data-view="notifications">
+          <form class="notification-form" data-notification-form>
+            <div class="settings-grid">
+              <section class="settings-card">
+                <h3>Email</h3>
+                <label class="toggle-row"><input type="checkbox" name="emailEnabled"> Enabled</label>
+                <label>Address<input type="email" name="emailAddress" placeholder="enoch@example.com"></label>
+                <p class="notice small" data-email-provider></p>
+              </section>
+              <section class="settings-card">
+                <h3>Discord</h3>
+                <label class="toggle-row"><input type="checkbox" name="discordEnabled"> Enabled</label>
+                <label>Webhook<input type="url" name="discordWebhookUrl" placeholder="https://discord.com/api/webhooks/..."></label>
+              </section>
+            </div>
+            <div class="inline-actions">
+              <button class="admin-button primary" type="submit">Save Notifications</button>
+              <button class="admin-button" type="button" data-test-notifications>Test</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="admin-view" data-view="users">
+          <div class="user-list" data-user-list></div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <div class="toast" data-toast hidden></div>
+  <script src="/admin/admin.js?v=lbl-admin-2026-06-03"></script>
+</body>
+</html>
